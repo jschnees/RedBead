@@ -1,0 +1,550 @@
+/* style for customer accounts */
+@font-face {
+  font-family: Market_Deco;
+  src: url(../font/Market_Deco.ttf);
+}
+@font-face {
+  font-family: cambria;
+  src: url(../font/cambria.ttf);
+}
+
+/* Color Scheme */
+:root {
+--Teal:rgb(13, 99, 134);
+--SeaGreen: rgb(32, 136, 141);
+--DarkGreen: rgb(34, 69, 77);
+--Steel: rgb(61, 61, 61);
+--LightBlue: rgb(131, 182, 219);
+--Red: rgb(192, 17, 43);
+}
+/* Reset */
+body, html, ul, li{
+  margin: 0px;
+  padding: 0px;
+  background-size: cover; 
+  background-repeat: no-repeat;
+}
+h1,h2,h3,h4,h5,h6{
+  margin: 0.1em;
+  text-align: left;
+}
+ul{
+  list-style-type: none;
+  margin: 0;
+  display: inline-block;
+}
+
+/* general */
+body {
+  margin: 0;
+  padding: 0;
+  color: rgb(0, 0, 0);
+  /* font family */
+  font-family: cambria, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  scroll-behavior: smooth;
+  background-color: rgb(37, 45, 73);
+}
+a{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+p {
+  font-family: cambria, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+h1{font-size: 5vh;}
+h1,h2,h3,h4,h5{font-family: Market_Deco, Helvetica, Arial, sans-serif;}
+h2{
+  padding: 10px;
+  width: auto;
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  text-align: center;
+  background: var(--LightBlue);
+  border: none;
+  border-radius: 5px;
+}
+h2 a{
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+}
+ul{
+  list-style-type: none;
+  padding: 10px;
+  margin: 0;
+}
+li{
+  line-height: 2;
+}
+
+.CoName{ 
+  font-family: Market_Deco, Helvetica, Arial, sans-serif;
+  font-size: 10vh;
+  color: rgb(255,255,255);
+  filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.25));
+}
+Main{
+  margin: auto;
+  padding: 0;
+}
+
+/* page header */
+header{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-basis: 100%;
+  height: 10vh;
+  font-size: 2vh;
+  justify-content: center;
+  margin-bottom: 4vh;
+}
+header img{
+  width: 10vw;
+  height: auto;
+  padding: 10px;
+  filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.25));
+  float: left;
+}
+
+/* Input Boxes for forms */
+input, input[type="textarea"], input[type=text] {
+  padding: 12px;
+  font-style: italic;
+  font-size: 16px;
+  width: 200px;
+  border: none;
+  background-color: rgb(255,255,255);
+  margin-bottom: 20px;
+  border-radius: 3px;
+
+  margin-bottom: 20px;
+  padding: 12px;
+}
+input:focus{
+  background-color: rgba(235, 243, 123, 0.75);
+}
+
+input[type=text] {
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Registration Containers */
+.registration-container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: flex-start;
+  width: 40vw;
+  height: auto;
+  margin: auto;
+  justify-content: center;
+  -webkit-filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.25));
+  filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.25));
+}
+.registration-container div{
+  margin: 5px auto;
+  display: inline-block;
+}
+
+/* EditData */
+.EditData{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: flex-start;
+  width: 30vw;
+  height: auto;
+  margin: auto;
+  background-color: rgb(255,255,255);
+  justify-content: center;
+  -webkit-filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.25));
+  filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.25));
+}
+.EditData div{
+  margin: 5px auto;
+  display: inline-block;
+}
+/* Login Containers */
+.login-container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: flex-start;
+  width: 27vw;
+  height: auto;
+  margin: auto;
+  justify-content: center;
+  -webkit-filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.25));
+  filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.25));
+}
+.login-container div{
+  margin: auto;
+  margin-bottom: 15px;
+}
+.loginBody{
+  background-image: url("../img/background.svg");
+  background-size: cover; 
+  background-repeat: no-repeat;
+}
+
+/* AccountPage Layout */
+.AccountPage{
+  min-height: 100%;
+  display: flex;
+  width: 90vw;
+  font-size: 2vh;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: auto;
+  margin: auto;
+  justify-content: center;
+}
+.AccountPage > div {
+  width: 35vw;
+  min-height: 25vh;
+  margin: 1vh 5vw;
+  margin-bottom: 8vh;
+  justify-content: justify;
+  text-align: justify;
+  background-color: rgb(255,255,255);
+  border-radius: 5px;
+  /*-webkit-filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.25));
+  filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.25));*/
+}
+.AccountPage p{
+  line-height: 1.90;
+}
+
+.scheduleTrip a:hover{
+background-color: var(--LightBlue);
+color: rgb(255,255,255);
+}
+
+button, .btn {
+  padding: 10px;
+  width: 10vw;
+  height: 5vh;
+  font-size: 15px;
+  color: rgb(0,0,0);
+  text-align: center;
+  background: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  margin-left: auto;
+}
+button:hover, .btn:hover {
+  background-color: var(--Teal); /* Green */
+}
+button, .btn a{
+color: rgb(255,255,255);
+}
+/* Log Out Button */
+.LogOutButton{
+  float: right;
+  position:absolute;
+  top:0;
+  right:0;
+  margin: 10px;
+  padding: 10px;
+  font-size: 3vh;
+  background-color: rgb(255,255,255);
+  border-radius: 5px;
+  -webkit-filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.25));
+  filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.25));
+
+  transition: 0.3s;
+}
+.LogOutButton a{
+  color: var(--Red);
+}
+.LogOutButton a:hover{
+  color: rgb(255,255,255);
+}
+.LogOutButton:hover{
+  background-color: var(--Red);
+}
+
+.error {
+  width: 90vw;
+  height: auto; 
+  margin: auto;
+  padding: 10px; 
+  border: 1px solid rgb(169, 68, 66); 
+  color: rgb(169, 68, 66); 
+  background: rgb(242, 222, 222); 
+  border-radius: 5px; 
+  text-align: center;
+}
+.success {
+  color: rgb(60, 118, 61); 
+  background: var(--SeaGreen);
+  border: 1px solid rgb(60, 118, 61);
+  margin-bottom: 20px;
+}
+.questions{
+  color: rgb(255,255,255);
+margin-left: 10rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  /* tablets - laptops */  
+  
+  .CoName{ 
+    font-family: Market_Deco, Helvetica, Arial, sans-serif;
+    font-size: 8vh;
+    color: rgb(255,255,255);
+    filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.25));
+  }
+  
+    /* Login Containers */
+    .login-container{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-content: stretch;
+      align-items: flex-start;
+      width: 50vw;
+      height: auto;
+      margin: auto;
+      background-color: rgb(255,255,255);
+      justify-content: center;
+      -webkit-filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.25));
+      filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.25));
+    }
+    .login-container div{
+      margin: 5px auto;
+    }
+    .loginBody{
+      background-image: none;
+    }
+  
+  /* Registration Containers */
+  .registration-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+    width: 40vw;
+    height: auto;
+    margin: auto;
+    justify-content: center;
+    -webkit-filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.25));
+    filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.25));
+  }
+  .registration-container div{
+    margin: 5px auto;
+    display: inline-block;
+  }
+  
+    /* AccountPage Layout */
+    .AccountPage{
+      min-height: 100%;
+      display: flex;
+      width: auto;
+      flex-wrap: wrap;
+      flex-direction: column;
+      height: auto;
+      margin: auto;
+      justify-content: center;
+    }
+    .AccountPage > div {
+      width: 90vw;
+      height: auto;
+      margin-bottom: 8vh;
+      justify-content: justify;
+      text-align: justify;
+      background-color: rgb(255,255,255);
+      margin: 2vh auto;
+      border-radius: 5px;
+      -webkit-filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.25));
+      filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.25));
+    }
+    .AccountPage p{
+      line-height: 1.90;
+    }
+  
+    .btn {
+      padding: 10px;
+      width: 15vw;
+      height: auto;
+      font-size: 15px;
+      color: rgb(255, 255, 255);
+      justify-content: center;
+      text-align: center;
+      background: var(--SeaGreen);
+      border: none;
+      border-radius: 5px;
+      margin: 10px;
+    }
+    button, .btn a{
+    color: rgb(255,255,255);
+    }
+    /* Log Out Button */
+    .LogOutButton{
+      float: right;
+      position:absolute;
+      top:0;
+      right:0;
+      margin: 10px;
+      padding: 10px;
+      font-size: 3vh;
+      color: rgb(255,255,255);
+      border-radius: 5px;
+      -webkit-filter: none;
+      filter: none;
+      transition: 0.3s;
+      background-color: var(--Red);
+    }
+    .LogOutButton a{
+      color: var(--Red);
+    }
+    .LogOutButton a:hover{
+      color: rgb(255,255,255);
+    }
+    .LogOutButton:hover{
+      background-color: none;
+    }
+  }
+  
+  
+  @media only screen and (max-width: 600px) {
+    /*phones*/
+  
+    header{
+      background: none;
+    }
+    header img{
+      height: 100px;
+      padding: 10px;
+      filter: none;
+    }
+  
+      /* Login Containers */
+    .login-container{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-content: stretch;
+      align-items: flex-start;
+      width: auto;
+      height: 100%;
+      margin: auto;
+      background-color: rgb(255,255,255);
+      justify-content: center;
+      -webkit-filter: none;
+      filter: none;
+    }
+    .login-container div{
+      margin: 5px auto;
+    }
+    .loginBody{
+      background-image: none;
+    }
+  
+    /* Registration Containers */
+    .registration-container{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-content: stretch;
+      align-items: flex-start;
+      width: auto;
+      height: auto;
+      margin: auto;
+      background-color: rgb(255,255,255);
+      justify-content: center;
+      -webkit-filter: none;
+      filter: none;
+    }
+    .registration-container div{
+      margin: 5px auto;
+      display: inline-block;
+    }
+  
+    /* AccountPage Layout */
+    .AccountPage{
+      min-height: 100%;
+      display: flex;
+      width: auto;
+      flex-wrap: wrap;
+      flex-direction: column;
+      height: auto;
+      margin: auto;
+      justify-content: center;
+    }
+    .AccountPage > div {
+      width: 90vw;
+      height: auto;
+      margin-bottom: 8vh;
+      justify-content: justify;
+      text-align: justify;
+      background-color: rgb(255,255,255);
+      margin: 5px auto;
+      border-radius: 5px;
+      -webkit-filter: none;
+      filter: none;
+    }
+    .AccountPage p{
+      line-height: 1.90;
+    }
+  
+    .btn {
+      padding: 10px;
+      width: 35vw;
+      height: auto;
+      font-size: 15px;
+      color: rgb(255, 255, 255);
+      justify-content: center;
+      text-align: center;
+      background: var(--SeaGreen);
+      border: none;
+      border-radius: 5px;
+      margin-left: 10px;
+    }
+    button, .btn a{
+      color: rgb(255,255,255);
+    }
+      /* Log Out Button */
+    .LogOutButton{
+      float: right;
+      position:absolute;
+      top:0;
+      right:0;
+      margin: 10px;
+      padding: 10px;
+      font-size: 3vh;
+      color: rgb(255,255,255);
+      border-radius: 5px;
+      -webkit-filter: none;
+      filter: none;
+      transition: 0.3s;
+      background-color: var(--Red);
+    }
+    .LogOutButton a{
+      color: var(--Red);
+    }
+    .LogOutButton a:hover{
+      color: rgb(255,255,255);
+    }
+    .LogOutButton:hover{
+      background-color: none;
+    }
+  }
